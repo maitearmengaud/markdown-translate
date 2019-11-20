@@ -9,7 +9,6 @@ class App extends Component {
     text: sampleText
   }
 
-  // appelée immédiatement après que le composant est monté 
     //getItem récupère ce qui est stocké dans localStorage
     // je recharge le texte si il n'y a pas de texte
 
@@ -19,19 +18,17 @@ class App extends Component {
       this.setState({ text })
     } else {
       this.setState({ text: sampleText })
+    }
   }
-}
   // appelée immédiatement après que la mise à jour a eu lieu.
-    //setItem permet d'enregistrer une donnée, il prend deux paramètres: le nom du paramètre et sa valeur
+  //setItem permet d'enregistrer une donnée, il prend deux paramètres: le nom du paramètre et sa valeur
   componentDidUpdate () {
     const { text } = this.state
     localStorage.setItem('text', text)
   }
 
-
-
   // event au moment ou quelquechose change dans le textarea, notre target c'est le textarea
-  // on récupère la valeur du state text et/ou la valeur qui à à l'intèrieur du textarea
+  // on récupère la valeur du state text et/ou la valeur qui est à l'intèrieur du textarea
   // on récupère la nouvelle valeur et on la met à jour, ici text
   handleChange = event => { 
     const text = event.target.value
@@ -70,8 +67,6 @@ class App extends Component {
       </Fragment>
     );
   }
-
 }
-
 
 export default App;
