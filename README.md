@@ -1,6 +1,6 @@
 # Markdown translate
 
-Projet personnel réalisé dans le cadre de ma formation à la Wild Code School, afin d'assimiler les premières notions apprises avec ReactJS. 
+Exercice réalisé dans le cadre de ma formation à la Wild Code School, afin d'assimiler les premières notions apprises avec ReactJS. Ce tutoriel est disponible sur [Udemy](https://www.udemy.com/)
 
 ## Built With
 * [react] (https://fr.reactjs.org/)
